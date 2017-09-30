@@ -6,4 +6,5 @@ include ':helloweb-core'
 
 //project(':helloweb-core').projectDir = new File('F:\\IDEA\\multi-module-with-gradle\\helloweb-core')
 include ':helloweb-web'
+include ':helloweb-hibernate'
 
