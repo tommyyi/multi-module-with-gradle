@@ -1,10 +1,6 @@
 rootProject.name = 'multi-module-with-gradle'
 include ':helloweb-entity'
 include ':helloweb-core'
-
-//project(':helloweb-entity').projectDir = new File('F:\\IDEA\\multi-module-with-gradle\\helloweb-entity')
-
-//project(':helloweb-core').projectDir = new File('F:\\IDEA\\multi-module-with-gradle\\helloweb-core')
 include ':helloweb-web'
 include ':helloweb-hibernate'
 
