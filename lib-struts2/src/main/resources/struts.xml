@@ -21,4 +21,6 @@
 
     <include file="http_param_auto_encapsulation.xml"/>
     <include file="http_param_access.xml"/>
+    <include file="http_intercpetor.xml"/>
+    <include file="http_tag.xml"/>
 </struts>

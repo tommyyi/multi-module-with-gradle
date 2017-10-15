@@ -10,6 +10,6 @@
 </head>
 
 <body>
-登陆成功！
+成功！
 </body>
 </html>

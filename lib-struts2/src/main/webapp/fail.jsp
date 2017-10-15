@@ -10,6 +10,6 @@
 </head>
 
 <body>
-登录失败！
+失败！
 </body>
 </html>
