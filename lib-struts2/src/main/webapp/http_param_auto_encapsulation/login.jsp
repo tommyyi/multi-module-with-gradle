@@ -12,6 +12,7 @@
 </head>
 
 <body>
+<h1>struts2提供的http参数的自动封装机制 </h1>
 muserlogin
 <form action="<%=path %>/propertyDrivenLoginAction.action" method="post">
     pusername:<input type="text" name="username"><br>

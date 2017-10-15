@@ -1,4 +1,4 @@
-<%@ page language="java" pageEncoding="ISO-8859-1" %>
+<%@ page language="java" pageEncoding="utf-8" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
@@ -11,6 +11,7 @@
 </head>
 
 <body>
+获取http交互中的数据
 <form action="<%=path %>/thirdAction.action" method="post">
     username:<input type="text" name="username"/> <br>
     password:<input type="password" name="password"/> <br>

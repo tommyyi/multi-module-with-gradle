@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="userLogin" namespace="/param" extends="struts-default">
+
+        <action name="propertyDrivenLoginAction" class="com.jikexueyuan.http_param_auto_encapsulation.action.PropertyDrivenLoginAction">
+            <result name="success">/success.jsp</result>
+        </action>
+
+        <action name="modelDrivenLoginAction" class="com.jikexueyuan.http_param_auto_encapsulation.action.ModelDrivenLoginAction">
+            <result name="success">/success.jsp</result>
+            <interceptor-ref name="modelDriven"/>
+            <interceptor-ref name="defaultStack"/>
+        </action>
+
+        <action name="tagDrivenLoginAction" class="com.jikexueyuan.http_param_auto_encapsulation.action.TagDrivenLoginAction">
+            <result name="success">/success.jsp</result>
+        </action>
+    </package>
+</struts>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="res_access" extends="struts-default">
+        <action name="firstAction" class="com.jikexueyuan.http_param_access.action.FirstAction">
+            <result name="success" type="dispatcher">/http_param_access/index.jsp</result>
+        </action>
+        <action name="secondAction" class="com.jikexueyuan.http_param_access.action.SecondAction">
+            <result name="success">/http_param_access/index.jsp</result>
+        </action>
+        <action name="thirdAction" class="com.jikexueyuan.http_param_access.action.ThirdAction">
+            <result name="success">/http_param_access/index.jsp</result>
+        </action>
+        <action name="fourthAction" class="com.jikexueyuan.http_param_access.action.FourthAction">
+            <result name="success">/http_param_access/index.jsp</result>
+        </action>
+        <action name="loginAction" class="com.jikexueyuan.http_param_access.action.LoginActionWithSaveSession2Response">
+            <result name="success">/http_param_access/success_with_session.jsp</result>
+            <result name="fail">/http_param_access/index.jsp</result>
+        </action>
+    </package>
+</struts>

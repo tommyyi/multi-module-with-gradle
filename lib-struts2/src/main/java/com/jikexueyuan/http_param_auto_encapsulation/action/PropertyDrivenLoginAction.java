@@ -1,9 +1,20 @@
-package com.jikexueyuan.pojo;
+package com.jikexueyuan.http_param_auto_encapsulation.action;
 
-public class Users
+import com.opensymphony.xwork2.ActionSupport;
+
+public class PropertyDrivenLoginAction extends ActionSupport
 {
     private String username;
     private String password;
+
+    @Override
+    public String execute() throws Exception
+    {
+        System.out.println(username);
+        System.out.println(password);
+
+        return "success";
+    }
 
     public String getUsername()
     {

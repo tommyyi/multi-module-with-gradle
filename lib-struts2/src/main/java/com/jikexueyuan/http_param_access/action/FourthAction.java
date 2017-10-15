@@ -1,12 +1,12 @@
-package com.jikexueyuan.action;
+package com.jikexueyuan.http_param_access.action;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+import org.apache.struts2.ServletActionContext;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-
-import org.apache.struts2.ServletActionContext;
-
-import com.opensymphony.xwork2.ActionSupport;
 
 public class FourthAction extends ActionSupport
 {
