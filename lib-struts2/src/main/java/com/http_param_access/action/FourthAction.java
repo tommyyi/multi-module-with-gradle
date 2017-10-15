@@ -1,4 +1,4 @@
-package com.jikexueyuan.http_param_access.action;
+package com.http_param_access.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 

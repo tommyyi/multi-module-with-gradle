@@ -1,6 +1,6 @@
-package com.jikexueyuan.http_param_access.action;
+package com.http_param_access.action;
 
-import com.jikexueyuan.pojo.Users;
+import com.pojo.Users;
 import com.opensymphony.xwork2.ActionSupport;
 
 import org.apache.struts2.ServletActionContext;

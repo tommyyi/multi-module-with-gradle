@@ -1,4 +1,4 @@
-package com.jikexueyuan.http_param_auto_encapsulation.action;
+package com.http_param_auto_encapsulation.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 

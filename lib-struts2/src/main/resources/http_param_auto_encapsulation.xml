@@ -5,17 +5,17 @@
 <struts>
     <package name="userLogin" namespace="/param" extends="struts-default">
 
-        <action name="propertyDrivenLoginAction" class="com.jikexueyuan.http_param_auto_encapsulation.action.PropertyDrivenLoginAction">
+        <action name="propertyDrivenLoginAction" class="com.http_param_auto_encapsulation.action.PropertyDrivenLoginAction">
             <result name="success">/success.jsp</result>
         </action>
 
-        <action name="modelDrivenLoginAction" class="com.jikexueyuan.http_param_auto_encapsulation.action.ModelDrivenLoginAction">
+        <action name="modelDrivenLoginAction" class="com.http_param_auto_encapsulation.action.ModelDrivenLoginAction">
             <result name="success">/success.jsp</result>
             <interceptor-ref name="modelDriven"/>
             <interceptor-ref name="defaultStack"/>
         </action>
 
-        <action name="tagDrivenLoginAction" class="com.jikexueyuan.http_param_auto_encapsulation.action.TagDrivenLoginAction">
+        <action name="tagDrivenLoginAction" class="com.http_param_auto_encapsulation.action.TagDrivenLoginAction">
             <result name="success">/success.jsp</result>
         </action>
     </package>

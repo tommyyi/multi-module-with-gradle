@@ -1,4 +1,4 @@
-package com.jikexueyuan.servlet.struts_param_auto_encapsulation_mechanism_mock;
+package com.servlet.struts_param_auto_encapsulation_mechanism_mock;
 
 import java.io.IOException;
 import java.lang.reflect.Field;

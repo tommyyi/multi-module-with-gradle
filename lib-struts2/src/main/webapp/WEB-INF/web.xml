@@ -10,7 +10,7 @@
 
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>com.jikexueyuan.servlet.struts_param_auto_encapsulation_mechanism_mock.LoginServlet</servlet-class>
+        <servlet-class>com.servlet.struts_param_auto_encapsulation_mechanism_mock.LoginServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>

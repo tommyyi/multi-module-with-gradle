@@ -1,6 +1,6 @@
-package com.jikexueyuan.servlet.struts_param_auto_encapsulation_mechanism_mock;
+package com.servlet.struts_param_auto_encapsulation_mechanism_mock;
 
-import com.jikexueyuan.pojo.Users;
+import com.pojo.Users;
 
 public class LoginServlet extends BaseServlet
 {

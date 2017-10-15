@@ -1,6 +1,6 @@
-package com.jikexueyuan.http_param_auto_encapsulation.action;
+package com.http_param_auto_encapsulation.action;
 
-import com.jikexueyuan.pojo.Users;
+import com.pojo.Users;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 

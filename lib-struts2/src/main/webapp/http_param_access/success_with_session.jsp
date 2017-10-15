@@ -1,4 +1,4 @@
-<%@ page language="java" import="com.jikexueyuan.pojo.Users" pageEncoding="utf-8" %>
+<%@ page language="java" import="com.pojo.Users" pageEncoding="utf-8" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";

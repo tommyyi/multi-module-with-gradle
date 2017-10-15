@@ -1,4 +1,4 @@
-package com.jikexueyuan.pojo;
+package com.pojo;
 
 public class Users
 {

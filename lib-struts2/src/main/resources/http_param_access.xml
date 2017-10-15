@@ -4,19 +4,19 @@
     "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
     <package name="res_access" extends="struts-default">
-        <action name="firstAction" class="com.jikexueyuan.http_param_access.action.FirstAction">
+        <action name="firstAction" class="com.http_param_access.action.FirstAction">
             <result name="success" type="dispatcher">/success.jsp</result>
         </action>
-        <action name="secondAction" class="com.jikexueyuan.http_param_access.action.SecondAction">
+        <action name="secondAction" class="com.http_param_access.action.SecondAction">
             <result name="success">/success.jsp</result>
         </action>
-        <action name="thirdAction" class="com.jikexueyuan.http_param_access.action.ThirdAction">
+        <action name="thirdAction" class="com.http_param_access.action.ThirdAction">
             <result name="success">/success.jsp</result>
         </action>
-        <action name="fourthAction" class="com.jikexueyuan.http_param_access.action.FourthAction">
+        <action name="fourthAction" class="com.http_param_access.action.FourthAction">
             <result name="success">/success.jsp</result>
         </action>
-        <action name="loginAction" class="com.jikexueyuan.http_param_access.action.LoginActionWithSaveSession2Response">
+        <action name="loginAction" class="com.http_param_access.action.LoginActionWithSaveSession2Response">
             <result name="success">/http_param_access/success_with_session.jsp</result>
             <result name="fail">/fail.jsp</result>
         </action>
