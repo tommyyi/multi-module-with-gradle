@@ -1,6 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
-<%@page import="com.qr.bean.Dep"%>
-<%@page import="com.qr.bean.Em"%>
+<%@page import="com.tag.qr.bean.Dep"%>
+<%@page import="com.tag.qr.bean.Em"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
 <%
 	String path = request.getContextPath();

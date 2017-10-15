@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
-<%@page import="com.jikexueyuan.bean.Em"%>
+<%@page import="com.tag.bean.Em"%>
 <%@taglib prefix="s" uri="/struts-tags" %>
 <%
 String path = request.getContextPath();
