@@ -2,15 +2,22 @@ package com.http_param_access.action;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ModelDriven;
+import com.pojo.Users;
 
 import org.apache.struts2.ServletActionContext;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
-public class ThirdAction extends ActionSupport
+public class ThirdAction extends ActionSupport implements ModelDriven<Users>
 {
+
+    private Users mUsers = new Users();
+
     @Override
     public String execute() throws Exception
     {
@@ -22,8 +29,18 @@ public class ThirdAction extends ActionSupport
         ServletContext con = (ServletContext) actionContext.get(ServletActionContext.SERVLET_CONTEXT);
 
         String username = request.getParameter("username");
-        System.out.println("第三个action    " + username);
+        String password = request.getParameter("password");
+        System.out.println("第三个action    " + mUsers.getUsername());
+        HttpSession httpSession = ((HttpServletRequest) request).getSession();
+        String httpSessionId = httpSession.getId();
+        httpSession.setAttribute("userInfo", mUsers);
 
         return "success";
+    }
+
+    @Override
+    public Users getModel()
+    {
+        return mUsers;
     }
 }

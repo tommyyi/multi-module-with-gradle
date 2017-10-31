@@ -11,6 +11,8 @@
             <result name="success">/success.jsp</result>
         </action>
         <action name="thirdAction" class="com.http_param_access.action.ThirdAction">
+            <interceptor-ref name="modelDriven"/>
+            <interceptor-ref name="defaultStack"/>
             <result name="success">/success.jsp</result>
         </action>
         <action name="fourthAction" class="com.http_param_access.action.FourthAction">

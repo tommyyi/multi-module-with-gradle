@@ -3,56 +3,6 @@
     "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
     "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
-    <package name="usersPackage" extends="struts-default">
-        <interceptors>
-            <interceptor name="FirstInter" class="com.interceptor.interceptor.FirstInterceptor">
-                <param name="someThing">admin</param>
-            </interceptor>
-            <interceptor name="SecondInter" class="com.interceptor.interceptor.SecondInterceptor"/>
-            <interceptor name="MethodInter" class="com.interceptor.interceptor.MethodInterceptor">
-                <param name="includeMethods">add,delete</param>
-                <param name="excludeMethods">show</param>
-            </interceptor>
-
-            <interceptor-stack name="AllInterceptor">
-                <interceptor-ref name="FirstInter"></interceptor-ref>
-                <interceptor-ref name="SecondInter"></interceptor-ref>
-                <interceptor-ref name="defaultStack"></interceptor-ref>
-            </interceptor-stack>
-        </interceptors>
-        <default-interceptor-ref name="AllInterceptor"/>
-        <global-results>
-            <result name="error">/fail.jsp</result>
-        </global-results>
-        <action name="*_*" class="com.action.{1}Action" method="{2}">
-            <interceptor-ref name="MethodInter"></interceptor-ref>
-            <interceptor-ref name="defaultStack"></interceptor-ref>
-            <result name="{1}success">/{1}index.jsp</result>
-        </action>
-
-    </package>
-
-    <package name="SecondPackage" extends="struts-default">
-
-        <interceptors>
-            <interceptor name="checkLogin" class="com.interceptor.interceptor.CheckLoginInterceptor"></interceptor>
-            <interceptor-stack name="defaultInterceptorss">
-                <interceptor-ref name="checkLogin"></interceptor-ref>
-                <interceptor-ref name="defaultStack"></interceptor-ref>
-            </interceptor-stack>
-        </interceptors>
-
-        <default-interceptor-ref name="defaultInterceptorss"></default-interceptor-ref>
-
-        <global-results>
-            <result name="loginfail">/interceptor/login.jsp</result>
-        </global-results>
-        <action name="loginAction" class="com.interceptor.action.LoginAction">
-            <interceptor-ref name="defaultStack"></interceptor-ref>
-            <result name="success">/interceptor/login.jsp</result>
-        </action>
-        <action name="salaryAction" class="com.interceptor.action.SalaryAction" method="*">
-            <result name="success">/success.jsp</result>
-        </action>
-    </package>
+    <include file="http_interceptor_group.xml"/>
+    <include file="http_interceptor_example.xml"/>
 </struts>

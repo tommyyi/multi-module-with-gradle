@@ -1,6 +1,6 @@
-include ':lib-entity'
-include ':lib-core'
-include ':lib-hibernate'
-include ':lib-web'
+//include ':lib-entity'
+//include ':lib-core'
+//include ':lib-hibernate'
+//include ':lib-web'
 include ':lib-struts2'
 

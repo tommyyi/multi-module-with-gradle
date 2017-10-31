@@ -30,9 +30,9 @@ public class BaseServlet extends HttpServlet
         try
         {
             //在程序运行时 获得当前类的getModel方法对象
-            Method method = this.getClass().getDeclaredMethod("getModel", null);
+            Method method = this.getClass().getDeclaredMethod("getModel", (Class<?>) null);
             //通过invoke方法 调用该方法 获得实体类对象
-            Object ob = method.invoke(this, null);
+            Object ob = method.invoke(this, (Object) null);
             //通过实体类对象获得  类类型
             Class cl = ob.getClass();
             //通过类类型获得 类中的属性对象数组
@@ -59,9 +59,9 @@ public class BaseServlet extends HttpServlet
                 }
             }
             //调用默认的方法 执行处理
-            Method me1 = this.getClass().getDeclaredMethod("execute", null);
+            Method me1 = this.getClass().getDeclaredMethod("execute", (Class<?>) null);
             //获得返回的url字符串
-            Object url = me1.invoke(this, null);
+            Object url = me1.invoke(this, (Object) null);
             //根据返回的字符串 跳转页面
             request.getRequestDispatcher(String.valueOf(url)).forward(request, response);
 
